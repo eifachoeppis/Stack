@@ -15,7 +15,8 @@ int main()
     std::cout << stack.top() << endl;
     std::cout << stack.getSize() << endl;
     std::cout << stack.isEmpty() << endl;
-    std::cout << "Hello World!\n";
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
