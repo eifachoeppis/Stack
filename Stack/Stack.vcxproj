@@ -128,12 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Element.cpp" />
-    <ClCompile Include="Stack.cpp" />
-    <ClCompile Include="StackImpl.cpp" />
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="AdtStack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Element.h" />
-    <ClInclude Include="StackImpl.h" />
+    <ClInclude Include="AdtStack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

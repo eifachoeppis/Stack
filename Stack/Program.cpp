@@ -2,11 +2,19 @@
 //
 
 #include <iostream>
-#include "StackImpl.h"
+#include "AdtStack.cpp"
+using namespace std;
 
 int main()
 {
-    StackImpl<int> stack;
+    AdtStack<int> stack = AdtStack<int>();
+    std::cout << stack.isEmpty() << endl;
+    stack.push(4);
+    stack.push(10);
+    stack.pop();
+    std::cout << stack.top() << endl;
+    std::cout << stack.getSize() << endl;
+    std::cout << stack.isEmpty() << endl;
     std::cout << "Hello World!\n";
 }
 
