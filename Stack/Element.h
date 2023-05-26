@@ -1,14 +1,16 @@
 #pragma once
+#include <memory>
+
 template<class T> class Element
 {
 public:
 	Element() = delete;
 	Element(const T value);
 	T getValue() const;
-	Element<T>* getNext() const;
-	void setNext(Element<T>* next);
+	std::shared_ptr<Element<T>> getNext() const;
+	void setNext(std::shared_ptr<Element<T>> next);
 
 private:
 	T value;
-	Element<T>* next;
+	std::shared_ptr<Element<T>> next;
 };

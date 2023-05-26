@@ -10,12 +10,15 @@ int main()
     AdtStack<int> stack = AdtStack<int>();
     std::cout << stack.isEmpty() << endl;
     stack.push(4);
+    std::cout << stack.top() << endl;
     stack.push(10);
+    std::cout << stack.top() << endl;
+    stack.push(20);
+    std::cout << stack.top() << endl;
     stack.pop();
     std::cout << stack.top() << endl;
     std::cout << stack.getSize() << endl;
     std::cout << stack.isEmpty() << endl;
-    std::cout << "Hello World!\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

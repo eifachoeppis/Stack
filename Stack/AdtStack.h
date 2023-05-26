@@ -1,10 +1,11 @@
 #pragma once
 #include "Element.h"
+#include <memory>
+
 template <class T> class AdtStack
 {
 	public:
 		AdtStack() = default;
-		~AdtStack();
 		int getSize();
 		bool isEmpty();
 		T top();
@@ -12,5 +13,5 @@ template <class T> class AdtStack
 		bool pop();
 	private:
 		int size;
-		Element<T>* lastElement;
+		std::shared_ptr<Element<T>> lastElement;
 };
