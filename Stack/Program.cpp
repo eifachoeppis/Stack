@@ -7,6 +7,10 @@ using namespace std;
 
 int main()
 {
+    AdtStack<string> stringStack = AdtStack<string>();
+    stringStack.push("test");
+    std::cout << stringStack.top() << endl;
+
     AdtStack<int> stack = AdtStack<int>();
     std::cout << stack.isEmpty() << endl;
     stack.push(4);
@@ -16,7 +20,16 @@ int main()
     std::cout << stack.getSize() << endl;
     std::cout << stack.isEmpty() << endl;
 
+    /*int numbers[3] = { 1, 2, 3 };
+    for (int i = 0; i < 4; i++)
+    {
+        std::cout << numbers[i] << endl;
+    }*/
 
+    // 1
+    // 2
+    // 3
+    // - 858993460
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

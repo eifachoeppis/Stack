@@ -26,6 +26,7 @@ template <class T> T AdtStack<T>::top()
 
 template <class T> void AdtStack<T>::push(T value) 
 {
+	// int size = value.size();
 	this->size++;
 	Element<T>* element = new Element<T>(value);
 	element->setNext(this->lastElement);
